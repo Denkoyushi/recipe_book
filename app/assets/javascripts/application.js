@@ -127,7 +127,7 @@ $( document ).ready(function() {
   $('#stars').on('starrr:change', function(e, value){
     $('#count').html(value);
     $('#score').val(value);
-    $('.alert').removeClass('hide').show().addClass("in");
+    $('.alert').removeClass('hide').show().delay(1000).addClass("in").fadeOut(3500);
   });
 
 });

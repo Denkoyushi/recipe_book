@@ -1,5 +1,20 @@
 <h1>Recipes</h1>
 
+<p>Search for:</p>
+<form action="/recipes/search" method="post">
+  <input id="search_string" class="form-control front-form" name="query" type="text">
+  <button class="btn btn-primary front">Search</button>
+</form>
+
+<% if @results.count != 0 %>
+  <h3>Search results containing '<%= @search_term %>':</h3>
+  <ul>
+    <% @results.each do |result| %>
+      <li><a href="/recipes/<%= result.id %>"><%= result.name %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
 <ul>
   <% @recipes.each do |recipe| %>
   <li><a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></li>

@@ -14,4 +14,4 @@ As a cook, I want to see recipes ordered by the number of stars they have, so th
 
 As a cook, I want to see some new recipes mixed in with the highest-rated ones, so that I can give new recipes with no or few ratings a try. (Hint: make a method that creates an arbitrary weighting between the average number of stars a recipe has, and how old it is.)
 
-As a cook, I want to search through recipes, so that I can find something with a particular ingredient or word. (Hint: use the Textacular gem.)
+* DONE As a cook, I want to search through recipes, so that I can find something with a particular ingredient or word. (Hint: use the Textacular gem.)

@@ -2,6 +2,8 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.all
+    @results = Recipe.basic_search(:content => params[:query])
+    @search_term = params[:query]
     render('index.html.erb')
   end
 

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'textacular', '~> 3.0'
 gem 'jquery-star-rating-rails'
 gem 'rails'
 gem 'pg'

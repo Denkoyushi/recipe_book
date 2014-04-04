@@ -1,5 +1,6 @@
 RecipeBook::Application.routes.draw do
   match('recipes', {:via => :get, :to => 'recipes#index'})
+  match('recipes/search', {:via => :post, :to => 'recipes#index'})
   match('recipes/new', {:via => :get, :to => 'recipes#new'})
   match('recipes', {:via => :post, :to => 'recipes#create'})
   match('recipes/:id', {:via => :get, :to => 'recipes#show'})
